@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: #333;
+  min-height: 100vh;
+  position: relative;
+  background: url("images2/c2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #E50914;
+}
+
+.logo img {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.logo svg {
+  margin-right: 0.5rem;
+  width: 500px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign-in-link {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.sign-in-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 440px;
+  margin: 90px auto 20px;  
+  padding: 20px;
+  background: white;
+  border-radius: 1px;
+}
+
+.form-title {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-text {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #79b6f3;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.recaptcha-text {
+  text-align: left;
+  margin: 20px auto;
+  font-size: 15px;
+  color: #888;
+  max-width: 455px;
+  padding: 0 10px;
+}
+
+.recaptcha-text a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.recaptcha-text a:hover {
+  text-decoration: underline;
+}
+
+.decorative-image {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+  opacity: 0.5;
+  pointer-events: none;
+}
+		
+/***Footer**/
+.footer{
+	position: relative;
+	margin-top: 160px;
+	padding: 80px 15% 10px;
+	color: #777;
+	background: rgba(0, 0, 0, 0.75);
+	z-index: 1;
+}
+
+.footer h2{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.footer .column{
+	flex-basis: 25%;
+	flex-grow: 1;
+	margin-bottom: 20px;
+}
+
+.footer .column a{
+	display: block;
+	text-decoration: none;
+	color: #777;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.footer .row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 30px 0;
+}
+
+.footer .English-button{
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 3px;
+	background: transparent;
+	border: 1px solid #777;
+}
+
+.English-button{
+	display: inline-flex;
+	align-items: center;
+	background: transparent !important;
+	border: 1px solid #fff !important;
+	padding: 7px 15px;
+}
+
+.English-button img{
+	width: 8px;
+	margin-left: 10px;
+	transition: transform 0.3s ease;
+}

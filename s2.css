@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: #000;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+body::before{
+	content: "";
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: url("images2/background.JPG");
+	background-position: center;
+	opacity: 0.5;
+	z-index: 0;
+}
+
+nav{
+	position: fixed;
+	z-index: 1;
+	padding: 25px 180px;
+}
+
+nav a img{
+	width: 160px;
+}
+
+.wrap{
+	position: relative;
+	width: 450px;
+	background: rgba(0,0,0,0.75);
+	margin: 100px auto 0;
+	padding: 60px 60px 160px;
+	border-radius: 4px;
+	z-index: 1;
+}
+
+.wrap h2{
+	color: #fff;
+	font-size: 2rem;
+}
+
+.wrap form{
+	margin: 25px 0 65px;
+}
+
+form .form-ctl{
+	height: 50px;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+.form-ctl input{
+	height: 100%;
+	width: 100%;
+	background: #333;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 4px;
+	padding: 0 20px;
+}
+
+.form-ctl label{
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	color: #8c8c8c;
+	transform: translateY(-50%);
+	pointer-events: none;
+	font-size: 1rem;
+	transition: all 0.1s ease;
+}
+
+.form-ctl input:is(:focus, :valid) ~ label{
+	font-size: 0.75rem;
+	transform: translateY(-130%);
+}
+
+.form-ctl input:is(:focus, :valid){
+	padding: 16px 20px 0;
+	background: #444;
+}
+
+form button{
+	width: 100%;
+	padding: 14px 0;
+	font-size: 1rem;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-weight: 500;
+	border-radius: 4px;
+	background: #e50914;
+	cursor: pointer;
+	margin-top: 8px;
+	transition: 0.1s ease;
+}
+
+form button:hover{
+	background: #c40812;
+}
+
+form .help{
+	display: flex;
+	justify-content: space-between;
+}
+
+form .remember-me{
+	display: flex;
+}
+
+form .remember-me input{
+	margin-right: 5px;
+	accent-color: #b3b3b3;
+}
+
+form .help :where(label, a){
+	font-size: 0.9rem;
+}
+
+.wrap :where(label, p, small, a){
+	color: #b3b3b3;
+}
+
+.wrap p a{
+	color: #fff;
+}
+
+.wrap small{
+	display: block;
+	margin-top: 15px;
+}
+
+.wrap small a{
+	color: #0071eb;
+}
+
+.wrap a{
+	text-decoration: none;
+}
+
+.wrap a:hover{
+	text-decoration: underline;
+}
+
+.remember-container {
+    margin-bottom: 20px; 
+    text-align: left;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    font-size: 0.9rem;
+}
+
+.or-divider {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b3b3b3;
+    font-size: 15px 0;
+    position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sign-in-code-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #b3b3b3;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s ease;
+	margin-top: 7px;
+}
+
+.sign-in-code-btn:hover {
+    background: #333;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #0071eb;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+/********Footer*********/
+.footer{
+	position: relative;
+	margin-top: 30px;
+	padding: 80px 15% 10px;
+	color: #777;
+	background: rgba(0, 0, 0, 0.75);
+	z-index: 1;
+}
+
+.footer h2{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.footer .column{
+	flex-basis: 25%;
+	flex-grow: 1;
+	margin-bottom: 20px;
+}
+
+.footer .column a{
+	display: block;
+	text-decoration: none;
+	color: #777;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.footer .row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 30px 0;
+}
+
+.footer .English-button{
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 3px;
+	background: transparent;
+	border: 1px solid #777;
+}
+
+.English-button{
+	display: inline-flex;
+	align-items: center;
+	background: transparent !important;
+	border: 1px solid #fff !important;
+	padding: 7px 15px;
+}
+
+.English-button img{
+	width: 8px;
+	margin-left: 10px;
+	transition: transform 0.3s ease;
+}
+
+@media (max-width: 740px){
+	body::before{
+		display: none;
+	}
+	nav, .wrap{
+		padding: 20px;
+	}
+	nav a img{
+		width: 140px;
+	}
+	.wrap{
+		width: 100%;
+		margin: 120px auto 50px;
+	}
+	.wrap form{
+		margin: 25px 0 40px;
+	}
+}
+
